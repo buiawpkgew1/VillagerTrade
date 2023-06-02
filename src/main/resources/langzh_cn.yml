@@ -15,6 +15,13 @@ messages:
     add:
       description: "添加新交易。"
       input-key: "&e输入交易 ID（键）&7（小写，数字和下划线）："
+    savecustom:
+      description: "保存自定义物品。"
+      no-item: "&c你必须手持物品！"
+      vanilla-item: "&c你不能保存原版物品！"
+      id-exists: "&c物品 ID（%itemId%）已存在！"
+      item-exists: "&c该物品已经是已注册的自定义物品，ID：%itemId%！"
+      success: "&a成功保存自定义物品&e%itemId%&a！"
   not-number: "&c无效输入：不是数字！"
   menu:
     list:
