@@ -8,13 +8,17 @@ messages:
       description: "打开显示所有已加载交易的菜单。"
     edit:
       description: "直接通过键值打开菜单以编辑交易。"
-      not-found: "&c找不到交易 %tradeId%。"
+      not-found: "&cCannot find trade %tradeKey%."
     reload:
       description: "重新加载配置文件。"
       success: "&a正在重新加载配置..."
     add:
       description: "添加新交易。"
-      input-key: "&e输入交易 ID（键）&7（小写，数字和下划线）："
+    remove:
+      description: "Remove a trade."
+      not-found: "&cCannot find trade %tradeKey%."
+      await-confirm: "&eYou are removing trade &a%tradeKey%&e. This action cannot be undone. Type &a/sfvt confirm&e to confirm."
+      success: "&aSuccessfully removed trade &e%tradeKey%&a!"
     savecustom:
       description: "保存自定义物品。"
       no-item: "&c你必须手持物品！"
@@ -22,6 +26,9 @@ messages:
       id-exists: "&c物品 ID（%itemId%）已存在！"
       item-exists: "&c该物品已经是已注册的自定义物品，ID：%itemId%！"
       success: "&a成功保存自定义物品&e%itemId%&a！"
+    confirm:
+      description: "Confirm an action."
+      no-active: "&cThere is no active action to confirm!"
   not-number: "&c无效输入：不是数字！"
   menu:
     list:
@@ -52,10 +59,10 @@ menu:
       lore:
         - "&e单击以添加新交易。"
         - ""
-        - "&7您还可以使用&e /sfvt add <trade_id>&7来添加新交易。"
+        - "&7You can also use &e/sfvt add <tradeKey>"
         - "&7to add a new trade."
     trade:
-      name: "&b%tradeId%"
+      name: "&b%tradeKey%"
       lore:
         - "&e交易类型：&7%traderTypes%"
         - "&e配方原材料 1：&7%input1%"
@@ -80,7 +87,7 @@ menu:
         - "&b单击返回交易列表。"
         - "&c所有未保存的更改都将被丢弃！"
     info:
-      name: "&b当前交易：&a%tradeId%"
+      name: "&bCurrent trade: &a%tradeKey%"
       lore:
         - "&7您可以在此菜单中编辑交易。"
         - ""
