@@ -45,12 +45,15 @@ menu:
         - "&7单击交易以编辑它。"
         - ""
         - "&7这些交易仅在村民更改专业或流浪商人生成时添加。"
+        - "&7when villagers change profession,"
+        - "&7or when wandering traders spawn."
     add:
       name: "&a&l添加新交易"
       lore:
         - "&e单击以添加新交易。"
         - ""
         - "&7您还可以使用&e /sfvt add <trade_id>&7来添加新交易。"
+        - "&7to add a new trade."
     trade:
       name: "&b%tradeId%"
       lore:
@@ -68,6 +71,7 @@ menu:
           - "&e单击以编辑此交易。"
         not-editable:
           - "&c此交易由其他插件添加，不可在游戏中编辑。"
+          - "&cand cannot be edited in-game."
   trade:
     title: "&d&l村民交易 &8- &0编辑"
     back:
@@ -81,6 +85,7 @@ menu:
         - "&7您可以在此菜单中编辑交易。"
         - ""
         - "&7更改将在单击保存按钮后应用。"
+        - "&7you click on the save button."
     amount:
       name: "&b数量：&a%amount%"
       lore:
@@ -139,26 +144,30 @@ menu:
       name: "&b经验奖励：&a%value%"
       lore:
         - "&7玩家是否从此交易中获得经验。"
+        - "&7from this trade."
         - ""
-        - "&e单击以切换。"
+        - "&eClick &7to toggle."
     exp-villager:
       name: "&b村民经验：&a%value%"
       lore:
         - "&7交易者从此交易中获得的经验。"
+        - "&7gets from this trade."
         - ""
-        - "&e单击以指定新值。"
+        - "&eClick &7to specify new value."
     price-multiplier:
       name: "&b价格倍数：&a%value%"
       lore:
         - "&7计算此交易价格时的价格倍数。"
+        - "&7calculating the price of this trade."
         - ""
-        - "&e单击以指定新值。"
+        - "&eClick &7to specify new value."
     save:
       name: "&a&l保存"
       lore:
         - "&e单击以保存更改。"
         - ""
         - "&7更改将应用于交易配置。"
+        - "&7to trade configuration."
     save-invalid:
       name: "&a&l保存"
       lore:
